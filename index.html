@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumi enables real-time inspection of file changes made by all team members.">
+    <meta name="keywords" content="Lumi,Software,Development,Real-time">
+    <meta name="author" content="Lumi Team">
+    <title>Lumi</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="graphics/material-design-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <header class="header">
+                <img src="graphics/lumi-logo.jpg" alt="Lumi logo">
+            </header>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Sprints</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sections">
+            <section class="section">
+                <div class="section-title">
+                    <h1 class="section-title-h1"><i class="material-icons">link</i><span>Home</span></h1>
+                </div>
+                <article class="section-article">
+                    <h2>Welcome</h2>
+                    <p>
+                        Welcome to the website that will give you an overview and introduction to the project we have
+                        been working on. We are eight students from the <a target="_blank"
+                            href="https://www.kth.se/">Royal Institute of
+                            Technology</a> in Stockholm,
+                        Sweden and we have been assigned to come up with a project that is relevant to our technical
+                        education.</p>
+                    <h2>Our project idea</h2>
+                    <p>
+                        Initially we came up with several different good ideas. The first was a peer-to-peer file
+                        sharing application. We wanted it to be as easy to use and offer the same functionality as the
+                        large cloud storage services that exist today, but without the need to store data through a
+                        third party.</p>
+                    <p>
+
+                        The second idea we came up with was a website that would focus solely on letting users engage in
+                        political debates. Users could vote for the best argument and the argument with the most number
+                        of votes would appear first on the website.
+                    </p>
+                    <p>
+                        The idea we chose was none of the above. Instead, we came up with something that might be
+                        considered a little more difficult, we wanted to develop a network application to make it easier
+                        for programmers working on the same project. This application would allow developers to see in
+                        real time what other team members are working on and what files they are changing.
+                    </p>
+                    <h2>Last note</h2>
+                    <p>
+                        This website is mainly for us and our classmates who want to get an overview of our project.
+                        This website contains information about our product, our sprints and who we are.
+                    </p>
+                </article>
+            </section>
+            <section class="section">
+                <div class="section-title">
+                    <h1 class="section-title-h1"><i class="material-icons">link</i><span>Product</span></h1>
+                </div>
+                <article class="section-article">
+                    <h2>Overview</h2>
+                    <p>
+                        Our product <b>Lumi</b> enables real-time inspection of file changes made by all team members.
+                        A client connects to the server and creates a room. Other clients can join the room. If a
+                        client makes a file change, the update is sent to the server and validated. If approved, the
+                        server will send it to the remaining clients in the room.
+                    </p>
+                    <img src="graphics/lumi-overview.png" alt="Lumi overview">
+                    <p>
+                        All this results in a synchronized workflow that minimizes conflicts and makes it easier for
+                        programmers to get an overview of what is currently being updated.
+                    </p>
+                    <h2>Functionality details</h2>
+                    <p>
+                        Down below is diagram made with <a target="_blank" href="https://app.diagrams.net/">Draw.io</a>
+                        that describes
+                        how the client and server should interact with each other.
+                        If you use this diagram, you should be able to implement the base functionality in some
+                        programming language.
+                    </p>
+                    <iframe frameborder="0" style="width:100%;height:500px;margin-bottom:12px;border:1px solid #cecece;"
+                        src="https://app.diagrams.net/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1a9KVevRomXmgu71RO0j7gl034nzP-Uzf"></iframe>
+                    <h2>Command line interface</h2>
+                    <p>
+                        As a user on the client side, you must be able to communicate with the server in order to create
+                        a room, join a room, leave a room and so on.
+                        The main tool at your disposal will be the command line interface.
+                    </p>
+                    <p>We can ask the server to create a new room using the following command. The server should respond
+                        with a unique room id.</p>
+                    <p class="shell-command">
+                        $ lumi --create
+                    </p>
+                    <p>If we would like to join an already created room we can use the following command.</p>
+                    <p class="shell-command">
+                        $ lumi --join [room id]
+                    </p>
+                    <p>If we would like to leave a room that we previously joined we can use the following command.</p>
+                    <p class="shell-command">
+                        $ lumi --leave
+                    </p>
+                    <p>This list will be extended over time as we add more functionality.</p>
+                </article>
+            </section>
+            <section class="section">
+                <div class="section-title">
+                    <h1 class="section-title-h1"><i class="material-icons">link</i><span>Sprints</span></h1>
+                </div>
+                <article class="section-article">
+                    <div class="sprint">
+                        <h2 class="sprint-title">Sprint 1</h2>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">Start date</p>
+                            <p class="sprint-value">2020-04-20</p>
+                        </div>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">End date</p>
+                            <p class="sprint-value">2020-04-24</p>
+                        </div>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">Sprint demo</p>
+                            <p class="sprint-value">In a <a target="_blank" href="https://zoom.us/">Zoom</a> meeting at
+                                08:30 AM</p>
+                        </div>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">Daily scrum</p>
+                            <p class="sprint-value">Everyday at 10:00 AM</p>
+                        </div>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">Sprint goal</p>
+                            <p class="sprint-value">Be able to use the base functionality. You should be
+                                able to sync my folder with a folder on a teammates computer.</p>
+                        </div>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">Sprint backlog</p>
+                            <table class="sprint-backlog">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Story</th>
+                                    <th>Story points</th>
+                                </tr>
+                                <tr>
+                                    <td>IP-48</td>
+                                    <td>Make a simple project website.</td>
+                                    <td class="story-point">3</td>
+                                </tr>
+                                <tr>
+                                    <td>IP-76</td>
+                                    <td>Create CLI controller from CMD prompt.</td>
+                                    <td class="story-point">5</td>
+                                </tr>
+                                <tr>
+                                    <td>IP-53</td>
+                                    <td>Create a connection between the Client A and the server.</td>
+                                    <td class="story-point">5</td>
+                                </tr>
+                                <tr>
+                                    <td>IP-61</td>
+                                    <td>Clients shall be able to detect file changes.</td>
+                                    <td class="story-point">13</td>
+                                </tr>
+                                <tr>
+                                    <td>IP-55</td>
+                                    <td>Server shall create a unique new Room and associate user with room.</td>
+                                    <td class="story-point">5</td>
+                                </tr>
+                                <tr>
+                                    <td>IP-60</td>
+                                    <td>Server and Client A shall be able to handle delete, move, and create files and
+                                        folder.</td>
+                                    <td class="story-point">20</td>
+                                </tr>
+                                <tr>
+                                    <td>IP-59</td>
+                                    <td>Client A shall store the shadow folder inside the source folder.</td>
+                                    <td class="story-point">2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sprint-pair">
+                            <p class="sprint-key">Story points sum</p>
+                            <p class="sprint-value story-points-sum"></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="section">
+                <div class="section-title">
+                    <h1 class="section-title-h1"><i class="material-icons">link</i><span>Team</span></h1>
+                </div>
+                <article class="section-article">
+                    <h2>Product owner</h2>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/placeholder.png" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Erik Rehn</p>
+                            <p class="mail">erikreh@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/erikschmutz"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Scrum master</h2>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/jesse-feng.jpg" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Jesse Feng</p>
+                            <p class="mail">jessef@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/jessef99"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/jesse-feng-2895b013a/"><img src="graphics/linkedin.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Developers</h2>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/christopher-gauffin.jpg" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Christopher Gauffin</p>
+                            <p class="mail">cgau@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/Christopher96"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/christopher-gauffin-745731b6/"><img src="graphics/linkedin.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/placeholder.png" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Tobias Johannesson </p>
+                            <p class="mail">tjohann@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/Surejohan"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/joakim-tornert.jpg" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Joakim Tornert</p>
+                            <p class="mail">jtornert@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/jtornert"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/michael-arenander.jpg" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Micheal Arenander</p>
+                            <p class="mail">micare@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/Taumich"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/placeholder.png" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Oscar Persson</p>
+                            <p class="mail">opers@gmail.com</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/octosquidinteractive"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-picture">
+                            <img src="graphics/marcus-alevarn.jpg" alt="Profile picture">
+                        </div>
+                        <div class="profile-info">
+                            <p class="name">Marcus Alevärn</p>
+                            <p class="mail">malevarn@kth.se</p>
+                            <div class="profile-social">
+                                <a target="_blank" href="https://github.com/alevarn"><img src="graphics/github.png"
+                                        alt="Github logo"></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/marcus-a-230389136/"><img src="graphics/linkedin.png"
+                                        alt="Github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <footer class="footer">
+            © 2020 Lumi <br>
+            Made with ❤️ in Stockholm, Sweden
+        </footer>
+    </div>
+    <script src="script/scroll.js"></script>
+    <script src="script/sp-sum.js"></script>
+</body>
+
+</html>
