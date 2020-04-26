@@ -213,12 +213,9 @@ body {
 
 @media only screen and (max-width: 800px) {
     .sections {
-        padding: 0px;
+        padding: 0px 8px;
     }
     .section-article {
         margin:0;
-    }
-    .sections {
-        padding:0px 8px;
     }
 }
