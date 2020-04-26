@@ -182,7 +182,7 @@ body {
 
 .profile-picture img {
     border-radius: 50%;
-    margin-right:24px;
+    margin: 0px 24px 0px 0px;
 }
 
 .profile-info p {
@@ -213,9 +213,12 @@ body {
 
 @media only screen and (max-width: 800px) {
     .sections {
-        padding: 0px 4px;
+        padding: 0px;
     }
     .section-article {
-        margin-right: 32px;
+        margin:0;
+    }
+    .sections {
+        padding:0px 4px;
     }
 }
