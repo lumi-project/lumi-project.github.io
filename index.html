@@ -117,18 +117,37 @@
                         a room, join a room, leave a room and so on.
                         The main tool at your disposal will be the command line interface.
                     </p>
-                    <p>We can ask the server to create a new room using the following command. The server should respond
+                    <p>
+                        To install the command line interface for Lumi enter the following command in your shell.
+                    </p>
+                    <p class="shell-command">
+                        $ npm i -g lumi-cli
+                    </p>
+                    <p>
+                        Note that you need <a href="https://www.npmjs.com">NPM</a> installed before you can download and use Lumi.
+                    </p>
+                    <p>
+                        After you have installed Lumi you should be able to ping the server using the following command.
+                    </p>
+                    <p class="shell-command">
+                        $ lumi ping
+                    </p>
+                    <p>Then we could ask the server to create a new room using the following command. The server should respond
                         with a unique room id.</p>
                     <p class="shell-command">
-                        $ lumi --create
+                        $ lumi create
                     </p>
                     <p>If we would like to join an already created room we can use the following command.</p>
                     <p class="shell-command">
-                        $ lumi --join &lt;room id&gt;
+                        $ lumi join &lt;room id&gt;
                     </p>
-                    <p>If we would like to leave a room that we previously joined we can use the following command.</p>
+                    <p>If we would like to check whether a room exists or not we can use the following command.</p>
                     <p class="shell-command">
-                        $ lumi --leave
+                        $ lumi check &lt;room id&gt;
+                    </p>
+                    <p>If we don't want to use two separate commands to create and join a room we can use the following command instead.</p>
+                    <p class="shell-command">
+                        $ lumi start
                     </p>
                     <p>This list will be extended over time as we add more functionality.</p>
                 </article>
