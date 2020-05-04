@@ -129,6 +129,7 @@ body {
 .section-article img {
     max-width: 100%;
     margin-bottom: 12px;
+    padding:24px 0;
 }
 
 .shell-command {
@@ -136,7 +137,8 @@ body {
     letter-spacing: 1px;
     background-color: #31415a;
     color: #fff;
-    padding: 12px;
+    padding: 16px 12px;
+    line-height: 100%!important;
 }
 
 .sprint-key {
