@@ -185,6 +185,7 @@ body {
 .profile-picture img {
     border-radius: 50%;
     margin: 0px 24px 0px 0px;
+    padding: 0px;
 }
 
 .profile-info p {
