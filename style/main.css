@@ -149,23 +149,23 @@ body {
 }
 
 .sprint-pair {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 .sprint-key {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     font-family: roboto-bold, sans-serif;
     font-size: 0.9rem!important;
     margin: 0px!important;
 }
 
 .sprint-key i {
-    position:relative;
-    top:-1px;
-    font-size:1.3rem!important;
-    margin-right:4px;
+    position: relative;
+    top: -1px;
+    font-size: 1.3rem!important;
+    margin-right: 4px;
 }
 
 .sprint-backlog {
@@ -192,38 +192,38 @@ body {
     color: #fff;
     background-color: #31415a;
     padding: 2px 4px;
-    border-radius:3px;
+    border-radius: 3px;
 }
 
 .sprint-backlog .story-point {
-    text-align:center;
+    text-align: center;
     vertical-align: middle;
 }
 
 .sprint-backlog .story-point span {
-    font-family:roboto-regular, sans-serif;
-    color:#fff;
-    background-color:#571071;
-    padding:4px 9px;
-    border-radius:20px;
+    font-family: roboto-regular, sans-serif;
+    color: #fff;
+    background-color: #571071;
+    padding: 4px 9px;
+    border-radius: 20px;
 }
 
 .story-points-sum span {
-    font-family:roboto-regular, sans-serif;
-    color:#fff;
-    background-color:#571071;
-    padding:4px 9px;
-    border-radius:20px;
+    font-family: roboto-regular, sans-serif;
+    color: #fff;
+    background-color: #571071;
+    padding: 4px 9px;
+    border-radius: 20px;
 }
 
 .sprint-backlog tr th:nth-child(1), .sprint-backlog tr td:nth-child(1) {
-    min-width:90px;
-    box-sizing:border-box;
+    min-width: 90px;
+    box-sizing: border-box;
 }
 
 .sprint-backlog tr th:nth-child(3), .sprint-backlog tr td:nth-child(3) {
-    min-width:120px;
-    box-sizing:border-box;
+    min-width: 120px;
+    box-sizing: border-box;
 }
 
 .sprint-backlog th, .sprint-backlog td {
@@ -243,23 +243,23 @@ body {
 }
 
 .profile-info .name {
-    font-family:roboto-bold, sans-serif;
-    color:#31415a;
+    font-family: roboto-bold, sans-serif;
+    color: #31415a;
 }
 
 .profile-info p {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     font-family: roboto-regular, sans-serif;
     font-size: 1.4rem;
     line-height: 100%!important;
-    margin-bottom:12px;
+    margin-bottom: 12px;
 }
 
 .profile-info i {
-    font-size:1.6rem;
-    margin-right:16px;
-    color:#464646;
+    font-size: 1.6rem;
+    margin-right: 16px;
+    color: #464646;
 }
 
 .profile-social {
@@ -288,8 +288,12 @@ body {
     .profile-picture img {
         margin: 0px 12px 0px 0px;
     }
+    .profile-info p {
+        font-size: 1.2rem;
+    }
     .profile-info i {
-        margin-right:12px;
+        font-size: 1.4rem;
+        margin-right: 12px;
     }
     .section-article {
         margin: 0;
