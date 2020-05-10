@@ -217,11 +217,13 @@ body {
 }
 
 .sprint-backlog tr th:nth-child(1), .sprint-backlog tr td:nth-child(1) {
-    width: 20%;
+    min-width:90px;
+    box-sizing:border-box;
 }
 
 .sprint-backlog tr th:nth-child(3), .sprint-backlog tr td:nth-child(3) {
-    width: 20%;
+    min-width:120px;
+    box-sizing:border-box;
 }
 
 .sprint-backlog th, .sprint-backlog td {
@@ -231,8 +233,7 @@ body {
 .profile {
     display: flex;
     align-items: center;
-    padding: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .profile-picture img {
@@ -283,6 +284,12 @@ body {
 @media only screen and (max-width: 800px) {
     .sections {
         padding: 0px 8px;
+    }
+    .profile-picture img {
+        margin: 0px 12px 0px 0px;
+    }
+    .profile-info i {
+        margin-right:12px;
     }
     .section-article {
         margin: 0;
