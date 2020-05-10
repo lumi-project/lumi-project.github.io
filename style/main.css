@@ -282,6 +282,13 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+    .nav-link {
+        padding: 4px;
+        margin: 0px 4px;
+    }
+    .nav-link i {
+        padding-right: 2px;
+    }  
     .sections {
         padding: 0px 8px;
     }
