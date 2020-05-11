@@ -44,6 +44,8 @@ body {
 
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-list-item {
@@ -277,7 +279,8 @@ body {
     padding: 32px 0px;
     text-align: center;
     font-size: 1.1rem;
-    color: #464646;
+    color: #fff;
+    background-color: #31415a;
     line-height: 200%;
 }
 
