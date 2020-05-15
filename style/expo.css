@@ -33,25 +33,11 @@ body {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 16px;
-  animation: fadeInDown 0.6s;
 }
 .hero-description {
   color: #fff;
   font-size: 1.6rem;
   line-height: 150%;
-  animation: fadeInDown 0.6s;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -200%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 .tutorial-container {
@@ -59,24 +45,23 @@ body {
   margin: auto;
 }
 
-
 .tutorial-title {
-  font-size:2.6rem;
-  text-align:center;
-  color:#2e2e2e;
-  margin-top:32px;
-  line-height:150%;
-  padding:32px;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: 32px;
+  line-height: 150%;
+  padding: 32px;
 }
 
 .tutorial-container h3 {
   font-size: 2rem;
   margin-bottom: 16px;
-  text-align:center;
+  text-align: center;
 }
 
 .tutorial-list-item {
-  position:relative;
+  position: relative;
   padding: 32px;
   margin: 32px 0;
   background-color: #fff;
@@ -88,18 +73,18 @@ body {
 }
 
 .tutorial-list-item-index {
-  font-size:1.2rem;
+  font-size: 1.2rem;
   font-family: roboto-bold, sans-serif;
-  position:absolute;
-  left:-16px;
-  top:-16px;
-  display:inline-block;
-  width:48px;
-  height:48px;
-  line-height:48px;
-  text-align:center;
-  border-radius:50%;
-  color:#fff;
-  background-color:#0b5ca9;
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #1b63a7;
   box-shadow: 1px 1px 3px #2e2e2e;
 }
