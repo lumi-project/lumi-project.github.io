@@ -55,7 +55,11 @@
     <link rel="stylesheet" type="text/css" href="style/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/fonts.css" />
     <link rel="stylesheet" type="text/css" href="style/expo.css" />
-    <link rel="stylesheet" type="text/css" href="asciinema-player/asciinema-player.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="asciinema-player/asciinema-player.css"
+    />
   </head>
 
   <body>
@@ -71,10 +75,59 @@
           </div>
         </div>
       </div>
-      <asciinema-player autoplay style="margin:0px 32px;" src="asciinema-player/330130.cast" cols="76" rows="21"></asciinema-player>
-      <asciinema-player autoplay style="margin:0px 32px;" src="asciinema-player/330131.cast" cols="76" rows="21"></asciinema-player>
-      <asciinema-player autoplay style="margin:0px 32px;" src="asciinema-player/330135.cast" cols="76" rows="21"></asciinema-player>
-      <asciinema-player autoplay style="margin:0px 32px;" src="asciinema-player/330134.cast" cols="76" rows="21"></asciinema-player>
+      <div class="tutorial-container">
+        <h2 class="tutorial-title">Follow this step-by-step tutorial to install Lumi and use it.</h2>
+        <ul class="tutorial-list">
+          <li class="tutorial-list-item">
+            <span class="tutorial-list-item-index">1</span>
+            <h3>Install the command line interface</h3>
+            <asciinema-player
+              class="shell-player"
+              autoplay
+              loop="loop"
+              src="asciinema-player/330130.cast"
+              cols="76"
+              rows="21"
+            ></asciinema-player>
+          </li>
+          <li class="tutorial-list-item">
+            <span class="tutorial-list-item-index">2</span>
+            <h3>List all rooms</h3>
+            <asciinema-player
+              class="shell-player"
+              autoplay
+              loop="loop"
+              src="asciinema-player/330131.cast"
+              cols="76"
+              rows="21"
+            ></asciinema-player>
+          </li>
+          <li class="tutorial-list-item">
+            <span class="tutorial-list-item-index">3</span>
+            <h3>Create a new room</h3>
+            <asciinema-player
+              class="shell-player"
+              autoplay
+              loop="loop"
+              src="asciinema-player/330135.cast"
+              cols="76"
+              rows="21"
+            ></asciinema-player>
+          </li>
+          <li class="tutorial-list-item">
+            <span class="tutorial-list-item-index">4</span>
+            <h3>Join a room</h3>
+            <asciinema-player
+              class="shell-player"
+              autoplay
+              loop="loop"
+              src="asciinema-player/330134.cast"
+              cols="76"
+              rows="21"
+            ></asciinema-player>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="asciinema-player/asciinema-player.js"></script>
   </body>

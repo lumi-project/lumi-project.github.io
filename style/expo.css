@@ -6,6 +6,7 @@ body {
 .wrapper {
   height: auto;
   width: 100%;
+  background-color: #f1f1f1;
 }
 .hero {
   background-image: url("/graphics/network.jpg");
@@ -31,7 +32,7 @@ body {
 .hero-title {
   color: #fff;
   font-size: 3rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 16px;
   animation: fadeInDown 0.6s;
 }
 .hero-description {
@@ -44,11 +45,61 @@ body {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -200%, 0);
   }
 
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+.tutorial-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+.tutorial-title {
+  font-size:2.6rem;
+  text-align:center;
+  color:#2e2e2e;
+  margin-top:32px;
+  line-height:150%;
+  padding:32px;
+}
+
+.tutorial-container h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  text-align:center;
+}
+
+.tutorial-list-item {
+  position:relative;
+  padding: 32px;
+  margin: 32px 0;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.shell-player pre {
+  width: 800px !important;
+}
+
+.tutorial-list-item-index {
+  font-size:1.4rem;
+  font-family: roboto-bold, sans-serif;
+  position:absolute;
+  left:-16px;
+  top:-16px;
+  display:inline-block;
+  width:48px;
+  height:48px;
+  line-height:48px;
+  text-align:center;
+  border-radius:50%;
+  color:#fff;
+  background-color:#327fc7;
+  box-shadow: 1px 1px 3px #2e2e2e;
 }
