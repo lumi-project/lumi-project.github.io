@@ -44,13 +44,47 @@ body {
   line-height: 150%;
 }
 
+.video-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.video-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: 32px;
+  line-height: 150%;
+  padding: 32px;
+}
+
+.executive-summary-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.executive-summary-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: 32px;
+  line-height: 150%;
+  padding: 32px;
+}
+
+.executive-summary-paragraph {
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  line-height: 150%;
+}
+
 .tutorial-container {
   max-width: 800px;
   margin: auto;
 }
 
 .tutorial-title {
-  font-size: 2.6rem;
+  font-size: 3rem;
   text-align: center;
   color: #2e2e2e;
   margin-top: 32px;
@@ -93,11 +127,10 @@ body {
   box-shadow: 1px 1px 3px #2e2e2e;
 }
 
-
 .footer {
   font-family: roboto-regular, sans-serif;
-  padding:32px 0 64px 0;
-  text-align:center;
-  line-height:200%;
-  font-size:1.2rem;
+  padding: 32px 0 64px 0;
+  text-align: center;
+  line-height: 200%;
+  font-size: 1.2rem;
 }
