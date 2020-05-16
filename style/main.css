@@ -15,11 +15,19 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 24px 0px;
+    padding-top: 24px;
 }
 
-.header {
-    margin-bottom: 16px;
+.nav-fixed {
+    position: fixed;
+    top: 0px;
+    background-color: #31415a;
+    z-index: 999;
+}
+
+.nav {
+    width: 100%;
+    padding: 16px 0;
 }
 
 .nav-list {
@@ -265,13 +273,6 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-    .nav-link {
-        padding: 4px;
-        margin: 0px 4px;
-    }
-    .nav-link i {
-        padding-right: 2px;
-    }  
     .sections {
         padding: 0px 8px;
     }
