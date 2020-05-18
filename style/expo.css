@@ -82,12 +82,12 @@ code {
   line-height: 150%;
 }
 
-.video-container {
+.video-container, .executive-summary-container, .download-container, .tutorial-container  {
   max-width: 800px;
   margin: auto;
 }
 
-.video-title {
+.video-title, .executive-summary-title, .download-title, .tutorial-title  {
   font-size: 3rem;
   text-align: center;
   color: #2e2e2e;
@@ -96,21 +96,7 @@ code {
   padding: 32px;
 }
 
-.executive-summary-container {
-  max-width: 800px;
-  margin: auto;
-}
-
-.executive-summary-title {
-  font-size: 3rem;
-  text-align: center;
-  color: #2e2e2e;
-  margin-top: 32px;
-  line-height: 150%;
-  padding: 32px;
-}
-
-.executive-summary-paragraph {
+.executive-summary-paragraph, .download-paragraph {
   font-family: roboto-regular, sans-serif;
   font-size: 1.1rem;
   color: #000;
@@ -118,19 +104,24 @@ code {
   padding: 0px 16px;
 }
 
-.tutorial-container {
-  max-width: 800px;
-  margin: auto;
+.download-table {
+  width:100%;
+  text-align:left;
+  margin:0px 16px;
 }
 
-.tutorial-title {
-  font-size: 3rem;
-  text-align: center;
-  color: #2e2e2e;
-  margin-top: 32px;
-  line-height: 150%;
-  padding: 32px;
+.download-table tr {
+  border-bottom:1px solid #cecece;
 }
+
+.download-table th {
+  font-family:roboto-bold, sans-serif;
+}
+
+.download-table th, .download-table td {
+  padding: 16px 16px 16px 0;
+}
+
 
 .tutorial-container h3 {
   font-size: 2rem;

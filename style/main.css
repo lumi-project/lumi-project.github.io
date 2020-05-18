@@ -129,6 +129,24 @@ body {
     padding: 24px 0;
 }
 
+.download-table {
+    width:100%;
+    text-align:left;
+    margin-bottom:12px;
+}
+
+.download-table tr {
+    border-bottom:1px solid #cecece;
+}
+
+.download-table th {
+    font-family:roboto-bold, sans-serif;
+}
+
+.download-table th, .download-table td {
+    padding: 16px 16px 16px 0;
+}
+
 .shell-command {
     font-family: monospace;
     letter-spacing: 1px;
